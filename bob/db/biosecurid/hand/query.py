@@ -77,7 +77,7 @@ class Database(bob.db.verification.utils.SQLiteDatabase,bob.db.verification.util
   
   def file_types(self):
     """Returns the names of the types."""
-    return File.finger_choices
+    return File.side_choices
 
   def clients(self, protocol=None, groups=None):
     """Returns a list of :py:class:`.Client` for the specific query by the user.
